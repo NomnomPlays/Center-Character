@@ -43,3 +43,29 @@ function findCenter() {
 }
 // console.log(text);
 
+if (theme == 'dark') {
+  if (window.location.pathname == '/settings.html') {
+    darkBtn.checked = true;
+  }
+  document.documentElement.classList.remove("light");
+  document.documentElement.classList.remove("oled");
+  document.documentElement.classList.add("dark");
+}
+
+if (theme == 'light') {
+  if (window.location.pathname == '/settings.html') {
+    lightBtn.checked = true;
+  }
+  document.documentElement.classList.remove("dark");
+  document.documentElement.classList.remove("oled");
+  document.documentElement.classList.add("light");
+}
+
+if (theme == 'oled') {
+  if (window.location.pathname == '/settings.html') {
+    oledBtn.checked = true;
+  }
+  document.documentElement.classList.remove("dark");
+  document.documentElement.classList.remove("light");
+  document.documentElement.classList.add("oled");
+}
