@@ -1,0 +1,176 @@
+html, body {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: var(--color-bg);
+	color: var(--color-fg);
+  min-height: 100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+:root,
+:root.light {
+	--color-bg: #fff;
+	--color-fg: #000;
+  --color-bg-light: rgba(0, 0, 0, 0.15);
+  --color-fg-light: rgba(0, 0, 0, 0.5);
+}
+:root.dark {
+	--color-bg: #2f2f2f;
+	--color-fg: #fff;
+  --color-bg-light: rgba(255, 255, 255, 0.15);
+  --color-fg-light: rgba(255, 255, 255, 0.5);
+}
+:root.oled {
+	--color-bg: #000;
+	--color-fg: #fff;
+  --color-bg-light: rgba(255, 255, 255, 0.15);
+  --color-fg-light: rgba(255, 255, 255, 0.5);
+}
+
+.header h1 {
+  transform: translateY(-50%);
+}
+
+.header .navigation-links {
+  position: absolute;
+  text-align: center;
+  height: 50%;
+  width: 100%;
+  bottom: 0;
+/*   border: 2px solid red;
+  border-bottom: none; */
+}
+
+.header .navigation-links a {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 45px;
+  transform: translateY(-2px);
+  border-radius: 10px 10px 0 0;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-bottom: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  height: 100%;
+  width: auto;
+  z-index: 2;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header .navigation-links a:hover {
+  border: 2px solid rgb(255, 255, 255);
+  border-bottom: none;
+}
+
+.header h1, a {
+  color: white;
+  text-align: center;
+/*   border: 5px solid red; */
+}
+
+.main-content {
+  width: 100%;
+  height: auto;
+  /* display: block; */
+  margin-top: 75px;
+  /* position: relative; */
+  flex: 1 0 auto;
+  padding-bottom: 1em;
+  box-sizing: border-box;
+}
+
+.main-content .title-text {
+  width: 50%;
+  border-bottom: 2px solid var(--color-fg);
+}
+
+.main-content .description-text {
+  display: flex;
+  margin-top: -15px;
+  color: var(--color-fg);
+}
+
+#nav-style {
+  display: inline-block;
+  text-decoration: none;
+/*   line-height: 45px; */
+/*   transform: translateY(-100%); */
+  border-radius: 10px;
+  border: 2px solid var(--color-fg-light);
+  background: var(--color-bg-light);
+/*   background: var(--color-fg); */
+  color: var(--color-fg);
+/*   height: 25%; */
+  width: auto;
+  z-index: 2;
+/*   font-size: 15px; */
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#nav-style:hover {
+  border: 2px solid var(--color-fg);
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-image: url('https://raw.githubusercontent.com/NomnomPlays/NomnomPlays.github.io/main/nav-bg.svg');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 5px solid black;
+  z-index: 2;
+/*   border: 5px solid red; */
+}
+
+input {
+  width: 80%;
+  height: auto;
+  border: 5px solid grey;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 24px;
+  left: 0;
+  padding-left: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  border: 5px solid grey;
+  width: 20%;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+button:hover {
+  /* border: 5px solid white; */
+  border-left: none;
+  color: white;
+  background: #343434;
+  cursor: active;
+}
+
+p {
+  /* position: absolute; */
+  border: 5px solid grey;
+  border-radius: 15px;
+  text-align: center;
+  /* left: 0; */
+  /* justify-content: center; */
+  font-size: 24px;
+  width: calc(97.5% + 2.5px);
+  height: auto;
+  background: #343434;
+  color: white;
+}
