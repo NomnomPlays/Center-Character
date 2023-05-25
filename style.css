@@ -5,7 +5,7 @@ html, body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   background: var(--color-bg);
-	color: var(--color-fg);
+  color: var(--color-fg);
   min-height: 100vh;
   display:flex;
   flex-direction:column;
@@ -131,7 +131,7 @@ html, body {
 }
 
 input {
-  width: 80%;
+  width: 30%;
   height: auto;
   border: 5px solid grey;
   border-top-left-radius: 10px;
