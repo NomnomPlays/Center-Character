@@ -2,6 +2,7 @@ var text = document.getElementById("inputText").value;
 var confirm = document.getElementById("confirmBtn");
 var result = document.getElementById("result");
 var stats = document.getElementById('stats');
+var theme = window.localStorage.getItem('mode');
 
 function replaceAt(str, index, newChar) {
     function replacer(origChar, strIndex) {
