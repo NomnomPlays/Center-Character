@@ -36,7 +36,7 @@ function findCenter() {
   } else {
     final = replaceAt(text, centerIndex2, "");
     final = replaceAt(final, centerIndex1, "[" + centerChar.bold() + "]");
-    result.innerHTML = text;
+    result.innerHTML = final;
   }
 
   stats.innerHTML = "Text: " + text + "<br>Length: " + text.length + "<br>Half: " + text.length / 2 + "<br>Half - 0.5: " + ((text.length / 2) - 0.5) + "<br>Mod: " + text.length % 2 + "<br>Center: " + centerChar + "<br>Index: " + centerIndex1 + ", " + centerIndex2;
