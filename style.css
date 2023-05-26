@@ -133,6 +133,7 @@ html, body {
 input {
   width: 30%;
   height: auto;
+  background: var(--color-fg-light);
   border: 5px solid var(--color-bg-light);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -147,6 +148,7 @@ input:focus {
 
 button {
   border: 5px solid var(--color-bg-light);
+  background: var(--color-fg-light);
   width: 20%;
   border-left: none;
   border-top-right-radius: 10px;
